@@ -34,6 +34,11 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 1.15em;
+  line-height: 1.6;
+}
+
 .flex-align-center {
   align-content: center;
 }
@@ -78,6 +83,7 @@ li {
   color: white;
   text-align: center;
   padding-top: 0.75em;
+  border: 1px solid darkslateblue;
   border-radius: 1em;
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -194,21 +200,29 @@ li {
 }
 
 .empresa .empresa-imagem img {
-  height: 80vh;
+  height: 85vh;
   min-height: 25em;
 }
 
 .empresa .empresa-container {
-  padding: 0 3em;
+  padding: 0 5em;
   color: white;
 }
 .empresa .empresa-container h3,
 .empresa .empresa-container p {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+.empresa-container .empresa-titulo {
+  font-size: 2.75em;
+}
+
+.empresa-container .empresa-texto {
+  font-size: 1.15em;
+  line-height: 1.6;
 }
 
 .empresa-lista-item {
-  margin-bottom: 1.75em;
+  margin-bottom: 1em;
 }
 .empresa-container i {
   width: auto;
@@ -226,4 +240,49 @@ li {
 .empresa-conteudo h3,
 .empresa-conteudo p {
   width: 100%;
+}
+
+.empresa-conteudo h3 {
+  font-size: 1.5em;
+}
+.empresa-conteudo p {
+  font-size: 1.15em;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 570px) {
+  .logo-bar {
+    margin-top: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .info-msg {
+    height: 80vh;
+  }
+
+  .info-card {
+    min-width: 16em;
+    max-width: 28em;
+  }
+
+  .empresa .empresa-imagem,
+  .empresa .empresa-container {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .empresa .empresa-container h3,
+  .empresa .empresa-container p {
+    margin-bottom: 0.5em;
+  }
+
+  .empresa .empresa-container {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
 }
