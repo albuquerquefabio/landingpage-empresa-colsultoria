@@ -250,19 +250,14 @@ p {
   line-height: 1.6;
 }
 
-@media only screen and (max-width: 570px) {
-  .logo-bar {
-    margin-top: 1.5em;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .banner h1 {
     font-size: 2.5em;
   }
 
   .info-msg {
-    height: 80vh;
+    height: auto;
+    padding: 3.5em 2.25em;
   }
 
   .info-card {
@@ -282,7 +277,49 @@ p {
   }
 
   .empresa .empresa-container {
-    padding-top: 3.5em;
-    padding-bottom: 3.5em;
+    padding: 3.5em 2.25em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .banner {
+    height: 90vh;
+  }
+  .banner h1 {
+    min-width: 60%;
+    font-size: 2em;
+    padding-top: 2.5em;
+    padding-left: 1.5em;
+  }
+  .logo-bar {
+    margin-top: 1.5em;
+  }
+  .menu-bar {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .info-msg {
+    height: auto;
+  }
+  .info-msg h2,
+  .info-msg p {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .empresa .empresa-imagem,
+  .empresa .empresa-container,
+  .empresa-conteudo {
+    width: 100%;
+    min-width: 100%;
+  }
+  .empresa-container {
+    padding: 5em 2em;
+  }
+  .empresa .empresa-imagem img {
+    height: 85vh;
+    min-height: 100%;
   }
 }
