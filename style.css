@@ -121,6 +121,10 @@ p {
   height: 85vh;
   background: url(assets/img/bg/pexels-pixabay-258160.jpg) fixed center
     no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .banner h1 {
   width: 65%;
